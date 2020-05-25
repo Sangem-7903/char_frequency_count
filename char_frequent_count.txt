@@ -1,0 +1,11 @@
+def most_frequent(string1):
+    dict_counter = {} 
+    for char in s:  
+        if not dict_counter or char not in dict_counter.keys():  
+            dict_counter.update({char: 1})
+        elif char in dict_counter.keys(): 
+            dict_counter[char] += 1
+    for key, val in sorted(dict_counter.items(), reverse=True): 
+         print(key,"=", val)
+s =input("Enter ")
+most_frequent(s)
